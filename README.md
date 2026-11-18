@@ -1,5 +1,6 @@
 # Prompt-Engineering-1
 E-commerce Customer Query Classification
+
 Introduction: 
 This project aims to make customer support easier by automatically classifying customer queries into different categories. It identifies what the customer needs help with, whether it's a delivery delay, payment issue, refund, cancellation, product defect, or account problem.
 The goal is to save time, reduce manual work, and make handling customer queries more efficient.
