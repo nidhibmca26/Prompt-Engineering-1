@@ -32,6 +32,8 @@ This project aims to help an online shopping company understand customer satisfa
 based on customer reviews give me what kind of sentimental review has the company received from the customer according to this category: positive, negative, neutral (give outputs only according to the category without any explanation or additional text)
 
 ### Sample Inputs and Expected Outputs
+
+| Sample Input | Expected Output |
 |---|---|
 | The product is excellent, and I love its quality. | Positive |
 | The delivery was late, and the product was damaged. | Negative |
