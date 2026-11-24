@@ -95,10 +95,11 @@ This project aims to make the flight booking process easier by automatically che
 Check whether the customer has provided their name, departure city, destination, travel date, number of passengers, and travel class. respond with the details given and If anything is missing, ask only for those details in a simple format, mentioning each missing detail as a keyword (e.g., Travel Date:, Number of Passengers:, Travel Class:). If all details are available, respond: "All required information has been provided."
 
 ### Sample Inputs and Expected Outputs
-Expected Output:
-Passenger Name: Rahul
-Departure City: Bengaluru
-Destination City: Delhi
-Travel Date: Missing
-Number of Passengers: Missing
-Travel Class: Missing
+| Field | Expected Output |
+|---|---|
+| Passenger Name | Rahul |
+| Departure City | Bengaluru |
+| Destination City | Delhi |
+| Travel Date | Missing |
+| Number of Passengers | Missing |
+| Travel Class | Missing |
