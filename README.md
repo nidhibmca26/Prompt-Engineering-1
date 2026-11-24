@@ -21,3 +21,22 @@ I'll share customer queries from my e-commerce business. understand what the cus
 | I can't log in. | Account Issues |
 | Where is my refund? | Refund |
 | What is the weather today? | Unknown |
+
+# Prompt-Engineering-1
+E-commerce Customer Review Sentiment Analysis
+
+### Introduction:
+This project aims to help an online shopping company understand customer satisfaction by automatically analyzing customer reviews. It identifies whether a customer has a positive, negative, or neutral opinion about a product, service, or shopping experience.The goal is to save time, reduce manual analysis, and help the company understand customer feedback to improve product quality and customer service.
+
+### Prompt:
+based on customer reviews give me what kind of sentimental review has the company received from the customer according to this category: positive, negative, neutral (give outputs only according to the category without any explanation or additional text)
+
+### Sample Inputs and Expected Outputs
+|---|---|
+| The product is excellent, and I love its quality. | Positive |
+| The delivery was late, and the product was damaged. | Negative |
+| The product arrived yesterday. | Neutral |
+| The customer support team was extremely helpful. | Positive |
+| The product is not worth the money. | Negative |
+| The package contained two items. | Neutral |
+| The phone is good, but the battery life is terrible. | Negative |
