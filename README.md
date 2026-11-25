@@ -104,7 +104,7 @@ Check whether the customer has provided their name, departure city, destination,
 | Number of Passengers | Missing |
 | Travel Class | Missing |
 
-# Prompt-Engineering-5
+# Prompt-Engineering-6
 Scholarship Eligibility Assessment
 
 ### Introduction:
@@ -123,3 +123,22 @@ Check the student's academic score and annual family income to decide if they qu
 | Score: 90%, Income not provided | INSUFFICIENT_DATA |
 | Score not provided, Income: ₹2,00,000 | INSUFFICIENT_DATA |
 | Score and income not provided | INSUFFICIENT_DATA |
+
+# Prompt-Engineering-7
+Medical Triage Classification
+
+### Introduction:
+This project aims to help healthcare organizations identify how urgently a patient needs medical attention by analyzing their reported symptoms. It classifies symptoms into four categories: EMERGENCY, URGENT, ROUTINE, and INSUFFICIENT_DATA. The goal is to help prioritize patients, identify serious health concerns quickly, and support faster medical decision-making.
+
+### Prompt:
+Check the patient's symptoms and decide how urgently they need medical attention. give EMERGENCY for life-threatening symptoms, URGENT for serious symptoms, and ROUTINE for mild issues. If there is no enough information, return INSUFFICIENT_DATA. Never guess or ignore emergency warning signs. Return only one label without explanation.ill give inputs give outputs according to that.
+
+### Sample Inputs and Expected Outputs
+| Patient Query | Expected Output |
+|---|---|
+| I have severe chest pain and difficulty breathing. | EMERGENCY |
+| I have a high fever and persistent vomiting. | URGENT |
+| I have had mild nasal congestion since yesterday. | ROUTINE |
+| I want to know which vitamins are good for general health. | ROUTINE |
+| I feel unwell. | INSUFFICIENT_DATA |
+| I have a severe headache that started suddenly. | EMERGENCY |
