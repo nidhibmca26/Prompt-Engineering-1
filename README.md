@@ -142,3 +142,20 @@ Check the patient's symptoms and decide how urgently they need medical attention
 | I want to know which vitamins are good for general health. | ROUTINE |
 | I feel unwell. | INSUFFICIENT_DATA |
 | I have a severe headache that started suddenly. | EMERGENCY |
+
+# Prompt-Engineering-8
+Context-Aware Email Generation
+
+### Introduction:
+This prompt helps an AI generate professional emails based on the user's situation and requirements while maintaining the right tone, length, and relevant content.
+
+### Prompt:
+Write a clear and professional email based on the user's situation. Follow the requested tone and word limit, include only relevant details, and use placeholders for any missing information. Don't make up personal details or reasons.
+
+### Expected Outputs
+Subject: Leave Request
+Dear Manager,
+I would like to request two days of leave to attend a family function. Kindly approve my
+request. I will ensure that my pending tasks are managed before my leave.
+Thank you for your consideration.
+Best regards
