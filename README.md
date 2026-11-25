@@ -152,10 +152,59 @@ This prompt helps an AI generate professional emails based on the user's situati
 ### Prompt:
 Write a clear and professional email based on the user's situation. Follow the requested tone and word limit, include only relevant details, and use placeholders for any missing information. Don't make up personal details or reasons.
 
-### Expected Outputs
+### Input and Expected Outputs
+Input:
+"Write an email to my manager requesting two days of leave due to a family function.
+Keep it polite and professional, and limit it to 50 words."
+Expected Output:
 Subject: Leave Request
 Dear Manager,
 I would like to request two days of leave to attend a family function. Kindly approve my
 request. I will ensure that my pending tasks are managed before my leave.
 Thank you for your consideration.
 Best regards
+# Prompt-Engineering-9
+Intelligent Meeting Scheduler
+
+### Introduction:
+This project focuses on designing an AI prompt for an intelligent meeting scheduler. It identifies suitable meeting slots by considering participants' availability, meeting duration, and scheduling constraints. The goal is to generate accurate scheduling decisions without making assumptions or violating any given restrictions.
+
+### Prompt:
+Select a suitable meeting time based on the participants' availability, meeting duration, and given constraints. Choose only from the provided time slots. Do not assume or invent availability. If no slot meets all requirements, return NO_AVAILABLE_SLOT. Output only the selected time slot or NO_AVAILABLE_SLOT.
+
+### Input and Expected Output:
+Input:
+Available Slots:
+• 10:00 AM – 11:00 AM
+• 11:00 AM – 12:00 PM
+• 2:00 PM – 3:00 PM
+Constraints:
+• Meeting duration: 1 hour
+• Manager is unavailable from 10:00 AM to 12:00 PM.
+• All participants must be available.
+• Meetings must be scheduled before 4:00 PM.
+Expected Output:
+2:00 PM – 3:00 PM.
+
+# Prompt-Engineering-10
+AI-Powered Resume Bullet Point Generator
+
+### Introduction:
+This project helps students convert their project details, internship experience, and achievements into professional resume bullet points. The user can provide information in simple sentences, and the system converts it into clear and ATS-friendly statements. It highlights the work completed, the tools used, the results achieved, and the benefits. It also avoids adding any false information or achievements.
+
+### Prompt:
+Convert the information provided by the user into professional and ATS-friendly resume bullet points. Explain what was accomplished, how it was done, what measurable impact was achieved, and what benefit it delivered. Use strong action verbs and relevant technical terms. Include numbers only when they are provided in the input. Never create false achievements or statistics. If measurable details are not available, write a meaningful bullet point using the available information and mention which metrics could make it stronger. Generate a maximum of two concise bullet points.
+
+### Sample Inputs and Expected Outputs
+| Sample Input | Expected Output |
+|---|---|
+| 1. I created a student attendance management system using Java. It stores student attendance and allows teachers to check attendance records. | Developed a Java-based Student Attendance Management System to store and manage student attendance records, helping teachers track attendance more easily. Metrics to strengthen: Number of students and time saved. |
+| 2. I completed a Python internship where I worked on data cleaning using Pandas. I cleaned 5,000 records and removed duplicate entries. | Cleaned and processed 5,000 records using Python and Pandas, removing duplicate entries and improving the quality of the dataset. |
+| 3. I built a personal portfolio website using HTML, CSS, and JavaScript. It displays my skills, projects, and contact details. | Designed and developed a responsive personal portfolio website using HTML, CSS, and JavaScript to showcase technical skills, projects, and contact information. Metrics to strengthen: Number of visitors and supported devices. |
+| 4. I developed a library management system using Python and MySQL. It manages book details, student information, and book issue records. | Developed a Library Management System using Python and MySQL to manage book details, student records, and book issue information, simplifying library record management. Metrics to strengthen: Number of books and users managed. |
+| 5. I worked on a sales dashboard using Power BI. It displays monthly sales, revenue, and product performance. | Created a Power BI sales dashboard to visualize monthly sales, revenue, and product performance, making business data easier to understand. Metrics to strengthen: Number of records analyzed and reporting time saved. |
+| 6. I developed a calculator application using HTML, CSS, and JavaScript. It performs addition, subtraction, multiplication, and division. | Built a calculator application using HTML, CSS, and JavaScript to perform basic arithmetic operations, providing users with a simple calculation tool. Metrics to strengthen: Number of users or calculations handled. |
+| 7. I created a student feedback system using PHP and MySQL. It collects feedback from 200 students and stores their responses. | Developed a student feedback system using PHP and MySQL to collect and store responses from 200 students, simplifying the feedback collection process. |
+| 8. I participated in a college hackathon and worked with a team to develop a website that helps students find study materials. | Collaborated with a team during a college hackathon to develop a website that helps students find and access study materials. Metrics to strengthen: Team size and number of resources added. |
+| 9. I developed a weather application using JavaScript and a weather API. It displays temperature and weather conditions for different cities. | Developed a JavaScript-based weather application integrated with a weather API to display temperature and weather conditions for different cities. Metrics to strengthen: Number of cities supported and API response time. |
+| 10. I completed an internship where I tested a web application and reported 25 bugs to the development team. | Tested a web application during an internship and identified and reported 25 bugs to the development team, supporting the application's quality improvement. |
