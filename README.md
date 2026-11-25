@@ -103,3 +103,23 @@ Check whether the customer has provided their name, departure city, destination,
 | Travel Date | Missing |
 | Number of Passengers | Missing |
 | Travel Class | Missing |
+
+# Prompt-Engineering-5
+Scholarship Eligibility Assessment
+
+### Introduction:
+This project aims to simplify the scholarship selection process by automatically checking students' academic scores and annual family income. It determines whether a student is eligible based on predefined criteria, where the academic score must be at least 85% and the annual family income must not exceed ₹3,00,000. If any required information is missing, the system identifies it instead of making assumptions. The goal is to save time, reduce manual work, and make scholarship evaluation faster and more accurate.
+
+### Prompt:
+Check the student's academic score and annual family income to decide if they qualify for the scholarship. The student must have at least 85% and a family income of ₹3,00,000 or less. If both conditions are met, give output as **ELIGIBLE**. If either condition is not met, give output as **NOT_ELIGIBLE**. If any information is missing, give output as **INSUFFICIENT_DATA**. Don't assume missing values or add any other criteria. Return only one label without explanation.ill give inputs according to this 
+
+### Sample Inputs and Expected Outputs
+| Sample Input | Expected Output |
+|---|---|
+| Score: 90%, Income: ₹2,50,000 | ELIGIBLE |
+| Score: 80%, Income: ₹2,00,000 | NOT_ELIGIBLE |
+| Score: 95%, Income: ₹4,00,000 | NOT_ELIGIBLE |
+| Score: 90%, Income: ₹2,00,000 | ELIGIBLE |
+| Score: 90%, Income not provided | INSUFFICIENT_DATA |
+| Score not provided, Income: ₹2,00,000 | INSUFFICIENT_DATA |
+| Score and income not provided | INSUFFICIENT_DATA |
